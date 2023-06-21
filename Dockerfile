@@ -1,6 +1,8 @@
 # Node.js v14 Alpine 이미지를 가져옵니다.
 FROM node:14-alpine
 
+LABEL org.opencontainers.image.source=https://github.com/ATG-AMS/dh-front-dev
+
 # 작업 디렉토리를 설정합니다.
 WORKDIR /app
 
