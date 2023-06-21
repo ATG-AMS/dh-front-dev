@@ -1,0 +1,1 @@
+This template is very basic, and you may need additional sections depending on your project. For example, you might want to add issue reporting guidelines, test execution methods, code style guidelines, etc.
