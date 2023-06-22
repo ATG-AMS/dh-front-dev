@@ -6,9 +6,6 @@
     "forwardPorts": [3000],
     "appPort": 3000,
     "workspaceFolder": "/app/donghae-front",
-    "features": {
-        "ghcr.io/devcontainers/features/github-cli:1": {}
-    },
     "customizations": {
         "vscode": {
             "extensions": [
