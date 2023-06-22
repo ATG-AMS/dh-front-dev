@@ -25,4 +25,4 @@ RUN chmod +x script.sh healthcheck.sh
 HEALTHCHECK --interval=30s --timeout=30s --start-period=5s --retries=3 CMD /app/healthcheck.sh
 
 # 컨테이너가 시작될 때 스크립트를 실행합니다.
-CMD [ "/app/script.sh" ]
+CMD [ "./script.sh" ]
