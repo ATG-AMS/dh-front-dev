@@ -16,8 +16,7 @@ RUN apk add --no-cache git
 EXPOSE 3000-3100
 
 # 스크립트를 복사합니다.
-COPY script.sh ./
-COPY healthcheck.sh ./
+COPY script.sh healthcheck.sh ./
 
 # 스크립트를 실행 가능하도록 설정합니다.
 RUN chmod +x script.sh healthcheck.sh
