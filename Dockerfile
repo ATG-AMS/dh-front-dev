@@ -13,7 +13,7 @@ RUN npm install -g npm@7 --no-cache
 RUN apk add --no-cache git
 
 # 외부에서 접근 가능한 포트를 엽니다.
-EXPOSE 3000-3100
+EXPOSE 3000
 
 # 스크립트를 복사합니다.
 COPY script.sh healthcheck.sh ./
