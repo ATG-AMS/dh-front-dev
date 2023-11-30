@@ -1,6 +1,6 @@
 #!/bin/bash
 
-if [ -f /app/npm_done ]; then
+if [ -f /scripts/npm_done ]; then
     echo "npm install finished, the container is healthy"
     exit 0
 else

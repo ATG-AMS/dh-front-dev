@@ -16,13 +16,13 @@ RUN apk add --no-cache git
 EXPOSE 3000
 
 # 스크립트를 복사합니다.
-COPY script.sh healthcheck.sh ./
+COPY script.sh healthcheck.sh /scripts/
 
 # 스크립트를 실행 가능하도록 설정합니다.
-RUN chmod +x script.sh healthcheck.sh
+RUN chmod +x /scripts/*.sh
 
 # HEALTHCHECK를 설정합니다.
 HEALTHCHECK --interval=30s --timeout=30s --start-period=5s --retries=3 CMD /app/healthcheck.sh
 
 # 컨테이너가 시작될 때 스크립트를 실행합니다.
-CMD [ "sh", "/app/script.sh" ]
+CMD [ "sh", "/scripts/script.sh" ]
